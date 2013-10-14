@@ -1,0 +1,5 @@
+<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
+<?php echo implode('', array_map(
+        function ($a) { return '<a href="'.$a->getHref().'">'.$a->getLabel().'</a>'; },
+        $this->pages));
+?>        
